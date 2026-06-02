@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+        }
+        .bloco {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .bloco:last-child {
+            border-bottom: none;
+        }
+        button {
+            padding: 8px 12px;
+            background-color: #4c7aaf;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input {
+            padding: 8px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #resultadoInput {
+            font-weight: bold;
+            color: #46c263;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: border 0.2s ease; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Exercícios aula 9</h2>
+
+        <div class="bloco">
+            <h3>Exercício 1</h3>
+            <p id="meuParagrafo">Texto original</p>
+            <button id="meuBotao">Clique para mudar o texto</button>
+        </div>
+
+        <div class="bloco">
+            <h3>Exercício 2</h3>
+            <input type="text" id="meuInput" placeholder="Digite aqui...">
+            <p>Texto digitado: <span id="resultadoInput">...</span></p>
+        </div>
+
+        <div class="bloco">
+            <h3>Exercício 3</h3>
+            <p>Passe o mouse por cima da imagem:</p>
+            <img id="minhaImagem" src="https://static.wikia.nocookie.net/xuxa/images/a/ab/Istockphoto-480552912-612x612.jpg/revision/latest?cb=20210811201814&path-prefix=pt-br" alt="Imagem">
+        </div>
+    </div>
+
+    <script src="exercicios.js"></script>
+
+</body>
+</html>
